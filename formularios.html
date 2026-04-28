@@ -13,10 +13,7 @@
     <link rel="stylesheet" href="css/formularios.css" />
   </head>
   <body>
-    <!--
-      Plantilla guía — Completá el markup según el frame «Añadir» de Figma.
-      Recordá: los tests automáticos sólo miran este archivo y css/formularios.css.
-    -->
+    
     <div class="page-shell">
       <div class="top-bar">Descuentos 20%</div>
 
@@ -31,21 +28,55 @@
       </nav>
 
       <main class="page-main">
-        <!-- TODO: envolver el formulario en <form method="post" action="#"> -->
-        <!-- TODO: título «Añadí tu super!» y texto guía de la maqueta -->
-        <!-- TODO: campos Nombre (*), Especie (*), Fecha, Foto, Descripción -->
-        <!-- TODO: fieldset Poderes con 4 checkboxes -->
-        <!-- TODO: fieldset Tipo de personaje con radios name="tipo-personaje" -->
-        <!-- TODO: botón <button type="submit">Añadir</button> -->
-        <p class="placeholder-copy">
-          Reemplazá este párrafo por el formulario completo respetando la jerarquía del diseño de
-          referencia.
-        </p>
+
+        <form class="formulario">
+          <h2>Añadí tu super!</h2>
+          <p class="subtitulo">Agregá tu personaje favorito completando las opciones.</p>
+
+          <div class="principal">
+             <div class="col-izq">
+                <p>*Nombre</p>
+                <input type="text" placeholder="Nombre" required>
+                <p>Fecha</p>
+                <input type="date">
+                <textarea placeholder="Descripción"></textarea>
+             </div>
+
+           <div class="col-der">
+               <p>*Especie</p>
+               <select required>
+                  <option>Especie</option>
+                  <option>Desconocido</option>
+               </select>
+               <p>Agregar Foto</p>
+
+               <input type="file">
+
+              <div class="poderes">
+                 <p>Poderes</p>
+                 <label><input type="checkbox"> Volar</label>
+                 <label><input type="checkbox"> SuperInteligencia</label>
+                 <label><input type="checkbox"> Vista de rayo láser</label>
+                 <label><input type="checkbox"> Billetera gorda</label>
+              </div>
+
+              <div class="linea"></div>
+                 <div class="tipo">
+                   <p>Tipo de Personaje</p>
+                   <label><input type="radio" name="tipo"> Héroe / Heroina</label>
+                   <label><input type="radio" name="tipo"> Villano / Villana</label>
+                 </div>
+              </div>
+            </div>
+           <button type="submit">Añadir</button>
+
+        </form>
+
       </main>
 
       <footer class="site-footer">
-        <p>Todos los derechos reservados - [TU NOMBRE Y APELLIDO]</p>
-        <a href="https://github.com/" class="footer-github">GitHub</a>
+        <p>Todos los derechos reservados - [ELINA LUISANA COPA]</p>
+        <img class="github" src="img/Github Icon.png" alt="GitHub">
       </footer>
     </div>
   </body>
