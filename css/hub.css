@@ -48,8 +48,9 @@ a {
 }
 
 .page-main {
-  min-height: calc(100vh - 38px - 100px - 51px - 51px);
-  padding: 32px 28px 120px;
+  min-height: calc(100vh - 180px);
+  padding: 32px;
+  width: 100%;
 }
 
 .hub-note {
@@ -68,10 +69,20 @@ a {
   padding: 14px 28px;
   font-size: 16px;
 }
+.site-footer p {
+  width: 100%;
+  text-align: center;
+}
 
 .footer-github {
   font-weight: 700;
   text-decoration: none;
+
+  width:144px;
+  height:33px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
 .footer-github:hover {
@@ -98,4 +109,73 @@ a {
 .fab-plus:focus-visible {
   outline: 3px solid #00669f;
   outline-offset: 3px;
+}
+
+.contenedor{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap; /* CLAVE para responsive */
+}
+
+.card{
+background-color: white;
+width: 300px;
+border-radius: 15px;
+box-shadow:0 4px 8px rgba(0,0,0,0.2);
+padding-bottom: 20px;
+position: relative;
+text-align: center;
+}
+
+.card-bg{
+height: 180px;
+border-radius: 10px 10px 0 0;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.batman{ background-image: url("../img/fondobatman.png"); }
+.harley{ background-image: url("../img/fondoharley.jpg"); }
+.superman{ background-image: url("../img/fondosuperman.jpg"); }
+
+.corazon{
+position:absolute;
+top:15px;
+left:15px;
+color:red;
+font-size:24px;
+}
+
+.avatar img{
+width:110px;
+height:110px;
+border-radius:50%;
+margin-top:-55px;
+box-shadow:0 4px 6px rgba(0,0,0,0.3);
+}
+
+.card h2{
+margin-top: 10px;
+font-size: 26px;
+}
+
+.card p{
+padding:15px 20px;
+font-size:14px;
+color:#333;
+text-align:left;
+}
+
+.card button{
+background-color: #00669F;
+color: white;
+border: none;
+padding: 12px 30px;
+border-radius: 25px;
+cursor: pointer;
+font-size: 14px;
 }
